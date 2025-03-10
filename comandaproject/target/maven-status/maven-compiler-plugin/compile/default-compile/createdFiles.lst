@@ -1,4 +1,6 @@
 com\ghartmann\IPratoDAO.class
-com\ghartmann\Prato.class
+com\ghartmann\MesaDAO.class
 com\ghartmann\App.class
 com\ghartmann\PratoDAO.class
+com\ghartmann\Prato.class
+com\ghartmann\IMesaDAO.class
