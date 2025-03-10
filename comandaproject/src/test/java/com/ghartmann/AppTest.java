@@ -8,10 +8,10 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    Prato prato = new Prato();
+    IPratoDAO pratoDao = new PratoDAO();
 
     @Test
     public void shouldAddDish(){
-        prato.add("foto.png", "Carne", "Carne com batata");
+        pratoDao.add("foto.png", "Carne", "Carne com batata");
     }
 }
