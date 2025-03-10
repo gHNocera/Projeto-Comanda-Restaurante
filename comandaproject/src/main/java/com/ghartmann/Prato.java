@@ -12,6 +12,8 @@ class Prato {
 
     String observacao;
 
+    int numeroMesa;
+
     public String getFoto() {
         return foto;
     }
@@ -42,6 +44,14 @@ class Prato {
 
     public void setObservacao(String observacao) {
         this.observacao = observacao;
+    }
+
+    public int getNumeroMesa() {
+        return numeroMesa;
+    }
+
+    public void setNumeroMesa(int numeroMesa) {
+        this.numeroMesa = numeroMesa;
     }
 
 

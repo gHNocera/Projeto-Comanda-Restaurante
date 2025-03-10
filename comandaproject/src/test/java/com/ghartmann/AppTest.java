@@ -12,8 +12,13 @@ public class AppTest
     IMesaDAO mesaDao = new MesaDAO();
 
     @Test
-    public void shouldAddDish(){
-        pratoDao.add("foto.png", "Carne", "Carne com batata");
+    public void shouldAddDishAndTable(){
+        pratoDao.add("foto.png", "Carne", "Carne com batata", 1);
         mesaDao.add(1);
+    }
+
+    @Test
+    public void shouldGetDish(){
+
     }
 }

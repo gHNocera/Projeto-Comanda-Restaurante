@@ -9,6 +9,6 @@ package com.ghartmann;
 public class PratoDAO implements IPratoDAO{
 
     @Override
-    public void add(String foto, String nome, String descricao) {
+    public void add(String foto, String nome, String descricao, int mesa) {
     }
 }
