@@ -5,9 +5,11 @@
 
 package com.ghartmann;
 
+import java.util.List;
+
 
 interface IMesaDAO {
 
-    public void add(int numero);
+    public void add(int numero, List<Prato> pratos);
 
 }

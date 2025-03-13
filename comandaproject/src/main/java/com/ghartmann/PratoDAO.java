@@ -7,8 +7,14 @@ package com.ghartmann;
 
 
 public class PratoDAO implements IPratoDAO{
+    Prato prato = new Prato();
 
     @Override
-    public void add(String foto, String nome, String descricao, int mesa) {
+    public Prato add(String foto, String nome, String descricao, int mesa) {
+        prato.setFoto(foto);
+        prato.setNomePrato(nome);
+        prato.setDescricao(descricao);
+        prato.setNumeroMesa(mesa);
+        return prato;
     }
 }
