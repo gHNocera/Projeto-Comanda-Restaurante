@@ -9,6 +9,7 @@ package com.ghartmann;
 public class PratoDAO implements IPratoDAO{
     Prato prato = new Prato();
 
+    //*Adiciona o prato ao banco de dados */
     @Override
     public Prato add(String foto, String nome, String descricao, int mesa) {
         prato.setFoto(foto);
