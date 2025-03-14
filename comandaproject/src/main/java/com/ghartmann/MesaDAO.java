@@ -5,11 +5,24 @@
 
 package com.ghartmann;
 
+import java.util.List;
+
 
 public class MesaDAO implements IMesaDAO{
 
+    Mesa mesa = new Mesa();
+
     @Override
-    public void add(int numero) {
+    public Boolean add(int numero, List<Prato> pratos) {
+        mesa.setNumero(numero);
+        mesa.setPratosList(pratos);
+        return true;
+    }
+
+    @Override
+    public Mesa get(int numero) {
+        mesa.getPratosList();
+        return mesa;
     }
 
 }
