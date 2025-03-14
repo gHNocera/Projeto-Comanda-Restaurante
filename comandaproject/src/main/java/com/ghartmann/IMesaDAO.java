@@ -10,6 +10,8 @@ import java.util.List;
 
 interface IMesaDAO {
 
-    public void add(int numero, List<Prato> pratos);
+    public Boolean add(int numero, List<Prato> pratos);
+
+    public Mesa get(int numero);
 
 }
