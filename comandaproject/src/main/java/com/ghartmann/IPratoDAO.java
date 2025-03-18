@@ -8,5 +8,5 @@ package com.ghartmann;
 
 interface IPratoDAO {
 
-    Prato add(String foto, String nome, String descricao, int mesa);
+    public Prato adicionarPrato(Prato prato);
 }
