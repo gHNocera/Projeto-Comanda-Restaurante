@@ -1,16 +1,7 @@
 package com.ghartmann;
 
 import java.util.List;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.SequenceGenerator;
-import jakarta.persistence.Table;
+import javax.persistence.*;
 
 
 
@@ -23,12 +14,11 @@ public class Mesa {
     @SequenceGenerator(name="id_prato_sequence", sequenceName="prato_seq")
     int id;
 
-    @Column(name="numeroMesa")
+    @Column(name="numeroMesa", unique=true)
     int numero;
 
     //*Uma mesa para muito pratos */
-    @OneToMany
-    @JoinColumn(name="mesa_id")
+    @OneToMany(mappedBy="mesa")
     List<Prato> pratosList;
 
     public int getNumero() {
@@ -45,6 +35,10 @@ public class Mesa {
 
     public void setPratosList(List<Prato> pratosList) {
         this.pratosList = pratosList;
+    }
+
+    public int getId() {
+        return id;
     }
 
 }
