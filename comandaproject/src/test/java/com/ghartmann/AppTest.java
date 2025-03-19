@@ -13,21 +13,16 @@ public class AppTest
     IPratoDAO pratoDao = new PratoDAO();
     IMesaDAO mesaDao = new MesaDAO();
     List<Prato> listaPratos = new ArrayList<>();
+    Prato prato1 = new Prato("foto", "Strogonoff", "Strogonoff de carne com batata palha", 1);
+    Prato prato2 = new Prato("foto", "", null, 0);
 
     @Test
-    public void shouldAddDishAndTable(){
-
-        listaPratos.add(prato1); listaPratos.add(prato2);
-        mesaDao.add(1, listaPratos);
+    public void shouldAddDish(){
+        pratoDao.adicionarPrato(prato1);
     }
 
     @Test
-    public void shouldGetDish(){
-        mesaDao.get(1);
+    public void shouldAddTable(){
     }
 
-    public void criarPrato(){
-        Prato prato1 = new Prato("foto", "Strogonoff", "Strogonoff de carne com batata palha", 1);
-        Prato prato2 = new Prato("foto", "", null, 0);
-    }
 }

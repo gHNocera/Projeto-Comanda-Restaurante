@@ -37,7 +37,7 @@ class Prato {
 
     //*Um prato para muitas mesas */
     @ManyToOne
-    @JoinColumn(name="fk_mesa_id", foreignKey= @ForeignKey(name="fk_mesa_prato"), referencedColumnName= "id", nullable=false)
+    @JoinColumn(name="fk_mesa_id", foreignKey= @ForeignKey(name="fk_mesa_prato"), referencedColumnName= "id")
     private Mesa mesa;
 
     public Prato(String foto, String nomePrato, String descricao, String obs, int numeroMesa){
