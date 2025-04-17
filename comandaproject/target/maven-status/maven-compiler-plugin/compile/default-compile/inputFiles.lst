@@ -1,8 +1,10 @@
 C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\App.java
-C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\IPratoDAO.java
-C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\Prato.java
-C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\Mesa.java
-C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\PratoDAO.java
-C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\MesaDAO.java
-C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\IMesaDAO.java
+C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\domain\Prato.java
+C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\domain\ItemPedido.java
+C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\dao\PratoDAO.java
+C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\domain\Pedido.java
+C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\dao\IPratoDAO.java
+C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\domain\Mesa.java
+C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\dao\MesaDAO.java
+C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\dao\IMesaDAO.java
 C:\Users\Gabriel\Documents\GitHub\Projeto-Comanda-Restaurante\comandaproject\src\main\java\com\ghartmann\JPAUtil.java

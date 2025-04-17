@@ -3,10 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package com.ghartmann;
+package com.ghartmann.dao;
 
 
-interface IPratoDAO {
+interface IMesaDAO {
 
-    public Prato adicionarPrato(Prato prato);
 }
