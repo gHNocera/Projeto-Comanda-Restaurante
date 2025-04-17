@@ -3,15 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package com.ghartmann;
-
-import java.util.List;
+package com.ghartmann.dao;
 
 
-interface IMesaDAO {
 
-    public Boolean add(int numero, List<Prato> pratos);
 
-    public Mesa get(int numero);
-
+public class MesaDAO implements IMesaDAO{
 }

@@ -1,7 +1,10 @@
-com\ghartmann\IPratoDAO.class
-com\ghartmann\MesaDAO.class
+com\ghartmann\JPAUtil.class
+com\ghartmann\dao\MesaDAO.class
+com\ghartmann\domain\ItemPedido.class
+com\ghartmann\domain\Prato.class
 com\ghartmann\App.class
-com\ghartmann\PratoDAO.class
-com\ghartmann\Mesa.class
-com\ghartmann\Prato.class
-com\ghartmann\IMesaDAO.class
+com\ghartmann\dao\IMesaDAO.class
+com\ghartmann\dao\IPratoDAO.class
+com\ghartmann\dao\PratoDAO.class
+com\ghartmann\domain\Pedido.class
+com\ghartmann\domain\Mesa.class
