@@ -9,7 +9,6 @@ import com.ghartmann.domain.Prato;
 
 
 
-
 /**
  * Unit test for simple App.
  *
@@ -31,7 +30,12 @@ public class AppTest{
 
     @Test
     public void alterDish(){
-
+        Prato prato1 = new Prato("foto", "Strogonoff", "Strogonoff de carne com batata palha");
+        pratoDao.adicionarPrato(prato1);
+        prato1.setNomePrato("Strogonoff de frango");
+        prato1.setDescricao("Strogonoff de frango com batata palha");
+        pratoDao.alterarPrato(prato1);
+        pratoDao.excluirPrato(prato1);
     }
 
 }

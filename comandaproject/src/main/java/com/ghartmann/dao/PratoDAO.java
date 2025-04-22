@@ -69,7 +69,24 @@ public class PratoDAO implements IPratoDAO{
 
     @Override
     public void alterarPrato(Prato prato) {
-        
+        EntityManager entityManager = JPAUtil.getEntityManager();
+        EntityTransaction transaction = null;
+
+        try {
+            transaction = entityManager.getTransaction();
+            transaction.begin();
+
+            entityManager.merge(prato);
+
+            transaction.commit();
+        } catch (Exception e) {
+            if(transaction != null && transaction.isActive()){
+                transaction.rollback();
+            }
+            throw new RuntimeException("Erro ao alterar prato", e);
+        }finally {
+            entityManager.close();
+        }
     }
 
     @Override
