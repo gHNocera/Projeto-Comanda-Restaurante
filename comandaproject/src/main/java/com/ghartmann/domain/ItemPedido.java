@@ -1,5 +1,6 @@
 package com.ghartmann.domain;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,6 +18,9 @@ public class ItemPedido {
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="id_pratomesa_sequence")
     @SequenceGenerator(name="id_pratomesa_sequence", sequenceName="pratomesa_seq")
     int id;
+
+    @Column(name="Observação")
+    String observação;
 
     @ManyToOne
     @JoinColumn(name = "pedido_id")
@@ -44,6 +48,30 @@ public class ItemPedido {
 
     public void setMesa(Mesa mesa) {
         this.mesa = mesa;
+    }
+
+    public String getObservação() {
+        return observação;
+    }
+
+    public void setObservação(String observação) {
+        this.observação = observação;
+    }
+
+    public Pedido getPedido() {
+        return pedido;
+    }
+
+    public void setPedido(Pedido pedido) {
+        this.pedido = pedido;
+    }
+
+    public Prato getPrato() {
+        return prato;
+    }
+
+    public void setPrato(Prato prato) {
+        this.prato = prato;
     }
 
 
