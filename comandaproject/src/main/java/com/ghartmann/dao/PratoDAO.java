@@ -5,7 +5,8 @@
 
 package com.ghartmann.dao;
 
-import java.util.Collection;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
@@ -107,7 +108,16 @@ public class PratoDAO implements IPratoDAO{
     }
 
     @Override
-    public Collection<Prato> retornarTodos(Prato prato) {
-        return null;
+    public List<Prato> retornarTodos() {
+        EntityManager entityManager = JPAUtil.getEntityManager();
+        List<Prato> pratosBD = new ArrayList<>();
+        try {
+            pratosBD = entityManager.createQuery("SELECT p FROM Prato p", Prato.class).getResultList();
+        } catch (Exception e) {
+            throw new RuntimeException("Erro ao buscar os pratos", e);
+        }finally{
+            entityManager.close();
+        }
+        return pratosBD;
     }
 }

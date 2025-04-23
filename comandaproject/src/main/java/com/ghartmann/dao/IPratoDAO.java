@@ -5,7 +5,7 @@
 
 package com.ghartmann.dao;
 
-import java.util.Collection;
+import java.util.List;
 
 import com.ghartmann.domain.Prato;
 
@@ -20,6 +20,6 @@ public interface IPratoDAO {
 
     public Prato consultarPrato(Prato prato);
 
-    public Collection<Prato> retornarTodos(Prato prato);
+    public List<Prato> retornarTodos();
 
 }

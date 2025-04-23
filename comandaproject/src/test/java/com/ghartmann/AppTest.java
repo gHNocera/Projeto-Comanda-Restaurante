@@ -1,5 +1,8 @@
 package com.ghartmann;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.assertNotNull;
 import org.junit.Test;
 
@@ -36,6 +39,30 @@ public class AppTest{
         prato1.setDescricao("Strogonoff de frango com batata palha");
         pratoDao.alterarPrato(prato1);
         pratoDao.excluirPrato(prato1);
+    }
+
+    @Test
+    public void allDish(){
+        Prato prato1 = new Prato("foto.png", "Mignon Alfredo", "Filé Mignon com macarrão ao molho alfredo");
+        Prato prato2 = new Prato("foto.png", "Strogonoff", "Strogonoff de carne com batata palha");
+        pratoDao.adicionarPrato(prato1);
+        pratoDao.adicionarPrato(prato2);
+        List<Prato> pratosBD =new ArrayList<>();
+        pratosBD = pratoDao.retornarTodos();
+        for (Prato p : pratosBD) {
+            System.out.println(p);
+        }
+
+    }
+
+    @Test
+    public void deleteAllDish(){
+        List<Prato> pratosBD =new ArrayList<>();
+        pratosBD = pratoDao.retornarTodos();
+        for (Prato p : pratosBD) {
+            pratoDao.excluirPrato(p);
+        }
+
     }
 
 }
