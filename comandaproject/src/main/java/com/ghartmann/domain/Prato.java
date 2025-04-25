@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -26,6 +27,9 @@ class Prato {
 
     @Column(name="descPrato")
     String descricao;
+
+    @OneToMany(mappedBy="pratosPedidos")
+    private Pedido pedido;
 
     public Prato(String foto, String nomePrato, String descricao){
         this.foto = foto;
