@@ -26,7 +26,6 @@ public class Mesa {
     @Column(name="numeroMesa", unique=true)
     int numero;
 
-    //*Uma mesa para muito pratos */
     @OneToMany(mappedBy="mesa")
     List<Pedido> pedidos = new ArrayList<>();
 
