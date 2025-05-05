@@ -8,11 +8,4 @@ package com.ghartmann.dao;
 
 interface IMesaDAO {
 
-    public boolean addicionarMesa();
-
-    public boolean remmoverMesa();
-
-    public void retornarMesa();
-
-
 }
