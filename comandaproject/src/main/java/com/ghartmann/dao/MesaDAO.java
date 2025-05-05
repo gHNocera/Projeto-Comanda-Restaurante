@@ -9,4 +9,5 @@ package com.ghartmann.dao;
 
 
 public class MesaDAO implements IMesaDAO{
+    
 }

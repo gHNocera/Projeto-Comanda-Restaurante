@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import com.ghartmann.dao.IPratoDAO;
 import com.ghartmann.dao.PratoDAO;
+import com.ghartmann.domain.Mesa;
 import com.ghartmann.domain.Prato;
 
 
@@ -24,7 +25,7 @@ public class AppTest{
     public void shouldAddDish(){
         Prato prato1 = new Prato("foto", "Strogonoff", "Strogonoff de carne com batata palha");
         pratoDao.adicionarPrato(prato1);
-        Prato pratoBD = pratoDao.consultarPrato(prato1);
+        Prato pratoBD = pratoDao.consultarPrato(prato1); 
         assertNotNull(pratoBD);
         pratoDao.excluirPrato(prato1);
         Prato pratoBD1 = pratoDao.consultarPrato(prato1);
@@ -32,7 +33,7 @@ public class AppTest{
     }
 
     @Test
-    public void alterDish(){
+    public void alterDish(){ 
         Prato prato1 = new Prato("foto", "Strogonoff", "Strogonoff de carne com batata palha");
         pratoDao.adicionarPrato(prato1);
         prato1.setNomePrato("Strogonoff de frango");
@@ -63,6 +64,11 @@ public class AppTest{
             pratoDao.excluirPrato(p);
         }
 
+    }
+
+    @Test
+    public void addMesa(){
+        Mesa mesa = new Mesa();
     }
 
 }
